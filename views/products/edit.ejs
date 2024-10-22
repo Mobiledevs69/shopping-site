@@ -1,0 +1,13 @@
+<h1>Edit Product</h1>
+<form action="/products/<%= product._id %>" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" value="<%= product.name %>" required>
+  
+  <label for="price">Price (SEK):</label>
+  <input type="number" id="price" name="price" value="<%= product.price %>" required>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description"><%= product.description %></textarea>
+
+  <button type="submit">Update Product</button>
+</form>

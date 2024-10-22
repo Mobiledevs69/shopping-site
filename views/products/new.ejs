@@ -1,0 +1,13 @@
+<h1>Add New Product</h1>
+<form action="/products" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="price">Price (SEK):</label>
+  <input type="number" id="price" name="price" required>
+
+  <label for="description">Description:</label>
+  <textarea id="description" name="description"></textarea>
+
+  <button type="submit">Add Product</button>
+</form>

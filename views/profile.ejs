@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>User Profile</h1>
+  <p>Welcome, <%= user.username %>!</p>
+
+  <h2>Your Information</h2>
+  <ul>
+    <li><strong>Username:</strong> <%= user.username %></li>
+  </ul>
+
+  <h2>Actions</h2>
+  <a href="/account/edit" class="btn btn-secondary">Edit Profile</a>
+  <a href="/logout" class="btn btn-danger">Logout</a>
+</div>
